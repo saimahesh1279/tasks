@@ -1,0 +1,92 @@
+<div class="col-md-9">
+    <div class="main">
+        <div class="topright">
+
+            <div class="col">
+                <a id="draft"><span class="glyphicon glyphicon-pencil"></span>  Draft</a>
+            </div>
+
+            <div class="col">
+                <span></span>
+                <a id="discard"><span class="glyphicon glyphicon-remove"></span>  Discard</a>
+            </div>
+        </div>
+        <div class="top">
+            <div id="ComposeMail">
+                <a>Compose mail</a>
+            </div>
+        </div>
+
+        <div align=center class="spin-icon">
+            <i class="fa fa-cogs fa-spin"> </i>
+        </div>
+
+
+        <div [formGroup]="form">
+            <div class="mail-body">
+
+                <div class="form-group row"><label for="email" class="col-sm-2 col-form-label">To:</label>
+                    <div class="col-sm-10"><input type="email" id="email" name="email" placeholder="Enter email Id" class="form-control" formControlName="email"></div>
+                </div>
+                <div class="form-group row"><label for="subject" class="col-sm-2 col-form-label">Subject:</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" class="form-control" formControlName="subject">
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="container-fluid ">
+                <div class="tool ">
+
+                    <ul>
+
+                        <li class="fa fa-magic "></li>
+                        <li class="fa fa-bold "></li>
+                        <li class="fa fa-underline "></li>
+                        <li class="fa fa-eraser "></li>
+                        <li class="fa fa-font "></li>
+                        <li class="fa fa-list-ul "></li>
+                        <li class="fa fa-list-ol "></li>
+                        <li class="fa fa-indent "></li>
+                        <li class="fa fa-table "></li>
+                        <li class="fa fa-link "></li>
+                        <li class="fa fa-photo "></li>
+                        <li class="fa fa-video-camera "></li>
+                        <li class="fa fa-arrows-alt "></li>
+                        <li class="fa fa-code "></li>
+                        <li class="fa fa-question "></li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div style="height: 28%; width: 100%; border-bottom:1px solid #e7eaec; " class="message ">
+                <textarea id="textarea" name="content " rows="8 " columns="200 ">What is Lorem Ipsum?Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum </textarea>
+
+
+            </div>
+
+            <div style="height: 2%; width: 100%; background-color: #e7eaec; " class="scroll "> </div>
+
+            <div style=" border-bottom: 1px solid #e7eaec; height: 12%; width: 100%; " class="send ">
+
+                <div class="mail-body text-right tooltip-demo ">
+                    <a> <button (click)="savemail()" class="btn btn-sm " id="send" type="submit"><i class="fa fa-reply "></i> Send</button></a>
+
+                    <a class="btn btn-white btn-sm " data-toggle="tooltip " data-placement="top " title="Discard email "><i class="fa fa-times "></i> Discard</a>
+                    <a class="btn btn-white btn-sm " data-toggle="tooltip " data-placement="top " title="Move to draft folder "><i class="fa fa-pencil "></i> Draft</a>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div style="background-color: #e7eaec; height: 20%; width: 100%; border-bottom:1px solid white; ">
+
+        </div>
+
+    </div>
+</div>
